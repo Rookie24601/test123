@@ -29,6 +29,7 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
+    print("this method is over")
 
 # Routers provide an easy way of automatically determining the URL conf.
 router = routers.DefaultRouter()
