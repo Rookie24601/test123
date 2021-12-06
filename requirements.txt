@@ -12,3 +12,4 @@ opentelemetry-instrumentation-django
 opentelemetry-instrumentation-mysql
 google-python-cloud-debugger; sys_platform == 'linux' and platform_machine == 'x86_64'
 google-cloud-secret-manager
+psycopg2-binary==2.9.2
