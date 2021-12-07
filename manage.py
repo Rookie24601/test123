@@ -3,6 +3,14 @@
 import os
 import sys
 
+try:
+    import googleclouddebugger
+    googleclouddebugger.enable(
+        breakpoint_enable_canary=False
+    )
+
+except ImportError:
+    pass
 
 def main():
     """Run administrative tasks."""
