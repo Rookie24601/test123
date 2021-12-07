@@ -2,5 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def homePageView(request):
-    print("Message 1")
+    message = "before default"
+    message = "default message"
+    print(request.GET)
     return HttpResponse("Test message 123")
